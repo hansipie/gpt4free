@@ -86,7 +86,8 @@ class VersionUtils:
         except CalledProcessError:
             pass
 
-        raise VersionNotFoundError("Version not found")
+        #raise VersionNotFoundError("Version not found")
+        return "Version not found"
 
     @cached_property
     def latest_version(self) -> str:
